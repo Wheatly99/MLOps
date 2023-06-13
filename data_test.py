@@ -8,4 +8,4 @@ y = x + np.random.random(100) - 1
 z = x + y + np.random.random(100)
 
 df = pd.DataFrame({'x': x, 'y': y, 'target': z})
-df.to_excel('test/data.xlsx', index=False)
+df.to_excel('test/test.xlsx', index=False)
