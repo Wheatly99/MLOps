@@ -9,4 +9,4 @@ def test_upload_file():
     response = client.post('/file', files=files)
     json_data = response.json()
     assert response.status_code == 200
-    assert float(json_data.split(' ')[2]) <= 5
+    assert json_data <= 5

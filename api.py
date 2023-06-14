@@ -18,4 +18,4 @@ def upload_file(file: UploadFile):
 
     model = joblib.load('model.pkl')
 
-    return print(f'MSE = {mean_squared_error(model.predict(X), y)}')
+    return mean_squared_error(model.predict(X), y)
